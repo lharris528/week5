@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Grocery Order</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="banner">
+      <img src="http://livenaturallymagazine.com/wp-content/uploads/2018/02/yellow-potatoes.jpg" alt="A picture of potatoes failed to load." width="500" height="320">
+    </div>
+    <main id="main">
+      <form action="submission.html" method="POST">
+        <h1>Grocery Order</h1>
+        <section>
+          <h2>Fruits</h2>
+          <p>You may only select one type of fruit. <strong class="purple-text">Choose wisely.</strong></p>
+          <label for="fruit">Pick your fruit:</label>
+          <select id="fruit" name="fruit">
+            <option value="bananas">Bananas</option>
+            <option value="apples">Apples</option>
+            <option value="corn">Corn</option>
+            <option value="kiwis">Kiwis</option>
+            <option value="pineapples">Pineapples</option>
+            <option value="avocados">Avocados</option>
+            <option value="illawarraplums">Illawarra Plums</option>
+            <option value="nectarines">Nectarines</option>
+          </select>
+          <input type="number" step="1" min="0" max="212">
+          <button>Add fruit to cart</button>
+            <h3>Fruit Prices</h3>
+            <table>
+              <th>Item</th>
+              <th>Cost</th>
+              <tbody>
+                <tr>
+                  <td>Bananas</td>
+                  <td>$0.47 lb.</td>
+                </tr>
+                <tr>
+                  <td>Apples</td>
+                  <td>$1.30 lb.</td>
+                </tr>
+                <tr>
+                  <td>Corn</td>
+                  <td>$0.50 lb.</td>
+                </tr>
+                <tr>
+                  <td>Kiwis</td>
+                  <td>$1.67 lb.</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+                <th>Item</th>
+                <th>Cost</th>
+                </th>
+              <tbody>
+                <tr>
+                  <td>Pineapples</td>
+                  <td>$1.87 lb.</td>
+                </tr>
+                <tr>
+                  <td>Avocodos</td>
+                  <td>$0.52 lb.</td>
+                </tr>
+                <tr>
+                  <td>Illawarra Plums</td>
+                  <td>$0.02 lb</td>
+                </tr>
+                <tr>
+                  <td>Nectarines</td>
+                  <td>$1.15 lb.</td>
+                </tr>
+              </tbody>
+            </table>
+        
+        </section>
+        <section>
+          <h2>Tubers</h2>
+          <p>Enter quantity of each tuber. <a href="https://en.wikipedia.org/wiki/Tuber" target="_blank">What is a tuber?</a></p>
+          <ul>
+            <li>
+              <label for="numberTubers">Russet Potatoes:</label>
+              <input id="numberTubers" type="number" step="1">
+            </li>
+            <br>
+            <li>
+              <label for="numberTubers">Golden Potatoes:</label>
+              <input id="numberTubers" type="number" step="1">
+            </li>
+            <br>
+            <li>
+              <label for="numberTubers">Bakers Potatoes:</label>
+              <input id="numberTubers" type="number" step="1">
+            </li>
+            <br>
+            <li>
+              <label for="numberTubers">Bellarosa Potatoes:</label>
+              <input id="numberTubers" type="number" step="1">
+            </li>
+            <br>
+            <li>
+              <label for="numberTubers">Irish Cobbler Potatoes:</label>
+              <input id="numberTubers" type="number" step="1">
+            </li>
+            <br>
+            <li>
+              <label for="numberTubers">Rosalind Potatoes:</label>
+              <input id="numberTubers" type="number" step="1">
+            </li>
+            <br>
+            <li>
+              <label for="numberTubers">Sweet Potatoes:</label>
+              <input id="numberTubers" type="number" step="1">
+            </li>
+            <br>
+            <li>
+              <label for="numberTubers">Yams:</label>
+              <input id="numberTubers" type="number" step="1">
+            </li>
+          </ul>
+          <button>Add tubers to cart</button>
+          <h2></h2>
+        </section>
+        <footer>
+        <a href="https://en.wikipedia.org/wiki/Great_Famine_(Ireland)" target="blank">What would a world without tubers look like? Learn more.</a>
+        <h1></h1>
+        </footer>
+      </form>
+    </main>
+  </body>
+</html>    

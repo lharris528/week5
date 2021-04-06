@@ -1,0 +1,238 @@
+
+
+.sticky {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.sticky-left {
+    height: 60px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.sticky-left > a,
+.sticky-right > a {
+    text-decoration: none;
+    margin: 10px;
+    color: gray;
+}
+
+.sticky-left > a:hover,
+.sticky-right > a:hover {
+    text-decoration: underline;
+}
+
+.sticky-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#login {
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border: orange;
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: darkorange;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.overvideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 150px;
+}
+
+.overvideo > h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+#getstart {
+    background-color: orange;
+    color: white;
+    width: 50%;
+    height: 50px;
+}
+
+#getstart:hover {
+    background-color: darkorange;
+}
+
+.boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.box-child {
+    width: 50%
+}
+
+.extra-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.choose-plan {
+    width: 60%;
+    height: 80%;
+    position: relative;
+    left: 20%;
+    top: -550px;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#background-pic {
+    min-width: 768px;
+    max-width: 961px;
+}
+
+.box-parent {
+    display: flex;
+    flex-direction: column;
+}
+
+#little-picture {
+    max-width: 46px;
+    max-height: 65px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+#mealplan {
+    color: white;
+    background-color: blue;
+    width: 25%;
+    height: 70px;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+#mealplan:hover {
+    background-color: darkblue;
+}
+
+#gift {
+    max-width: 332px;
+}
+
+.follow-us {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 243, 243);
+}
+
+.follow {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px gray;
+}
+
+#fb {
+    width: 30px;
+    height: 24px;
+}
+
+.discover {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blog-section {
+    align-self: flex-start;
+}
+
+#chef {
+    height: 100px;
+    width: 100px;
+}
+
+#chef-blog {
+    color: black;
+    align-self: flex-start;
+}
+
+.footer {
+    background-color: blue;
+}
+
+.footer > p,
+.footer h4 {
+    color: cyan;
+}
+
+.all-links {
+    display: flex;
+}
+
+.links {
+    height: 200px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.links > a,
+.terms > a {
+    margin: 5px;
+    color: lightblue;
+    text-decoration: none;
+}
+
+.links > a:hover,
+.terms > a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+

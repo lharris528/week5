@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="bankstyle.css" type="text/css" rel="stylesheet">
+    <title>Ohio</title>
+</head>
+<body>
+    <h1>TruWest Credit Union</h1>
+    <div class="userField">
+        <form id="submitLogin" class="loginSection" action="javascript:loginToAccount()">  
+            <h2>Login</h2>
+
+
+            <div>
+                <label for="existingUser" class="center">Username:</label>
+                <div class="center padded">
+                    <input id="existingUser" name="existingUser" class="inputWidth" type="text" minlength="8" maxlength="40" pattern="^[a-zA-Z0-9_-]*$" title="Only letters, numbers, underscores, and hyphens are allowed in username." required> 
+                </div>
+                <div id="existingUserWarning" class="center padded hide">
+                    <p class="warningMessage">User does not exist.</p>
+                </div>
+                <div id="existingUserWarning2" class="center padded hide">
+                    <p class="warningMessage">Please provide a valid username.</p>
+                </div>
+
+
+                <div class="center padded">
+                    <button id="login">Login</button>
+                </div>
+            </div>
+        </form>
+        <h4>OR</h4>
+        <form id="registerForm" action="javascript:register()" method="POST">
+            <div class="newUser">
+                <h2>Sign Up</h2>
+
+
+                <label for="user" class="center">Username:</label>
+                <div class="center padded"> 
+                    <input id="user" name="user" class="inputWidth" type="text" minlength="8" maxlength="40" pattern="^[a-zA-Z0-9_-]*$" title="Only letters, numbers, underscores, and hyphens are allowed in username." required>
+                </div>
+                <div id="userWarning" class="center padded hide">
+                    <p class="warningMessage">Username is already in use. Please use a different username or try adding numbers.</p>
+                </div>
+                <div id="userWarning2" class="center padded hide">
+                    <p class="warningMessage">Please provide a username in the space provided.</p>
+                </div>
+
+
+                <label for="currency" class="center">Currency:</label>
+                <div class="center padded">
+                    <select id="currency" name="currency" class="inputWidth" required>
+                        <option>$ (Dollar)</option>
+                        <option>€ (Euro)</option>
+                        <option>¥ (Yuan)</option>
+                        <option>£ (Pound)</option>
+                        <option>₪ (Shekel)</option>
+                        <option>₽ (Ruble)</option>
+                    </select>
+                </div>
+
+
+                <label for="description" class="center">Description:</label>
+                <div class="center padded">
+                    <textarea id="description" name="description" class="inputWidth" cols="16" rows="3" title="Please provide a brief description of the account." required></textarea>
+                </div>
+                <div id="descriptionWarning" class="center padded hide">
+                    <p class="warningMessage">Please write a brief description of this account.</p>
+                </div>
+
+
+                <label for="balance" class="center">Starting Balance:</label>
+                <div class="center padded">
+                    <input id="balance" name="balance" class="inputWidth" type="number" step="0.01" min="50" pattern="^\d+(\.\d{1,2})?$" title="Only numbers and up to two decimal places are allowed." required>
+                </div>
+                <div id="balanceWarning" class="center padded hide">
+                    <p class="warningMessage">You must include your initial deposit amount.</p>
+                </div>
+
+
+                <div class="center padded">
+                    <button id="submitCreateAccount">Create Account</button>
+                </div>
+            </div>
+        </form>
+
+
+        <div class="newTransaction hide">
+            <form id="submitTransaction" action="javascript:transact()" method="POST">
+                <h2 class="center">Log Transaction</h2>
+
+
+                <label for="date" class="center">Date of Transaction:</label>
+                <div class="center padded">
+                    <input id="date" name="date" class="inputWidth" type="datetime-local" required>
+                </div>
+                <div id="dateWarning" class="center padded hide">
+                    <p class="warningMessage">You must record the time and date the transaction took place.</p>
+                </div>
+
+
+                <label for="object" class="center">Transaction Description:</label>
+                <div class="center padded">
+                    <input id="object" name="object" class="inputWidth" type="text" minlength="1" maxlength="100" title="A brief description of the transaction." required>
+                </div>
+                <div id="objectWarning" class="center padded hide">
+                    <p class="warningMessage">You must include a brief description of the transaction.</p>
+                </div>
+
+
+                <label for="amount" class="center">Transaction Amount:</label>
+                <div class="center padded">
+                    <input id="amount" name="amount" class="inputWidth" type="number" step="0.01" pattern="^-{0,1}\d+(\.\d{1,2})?$" title="Amount must not equal zero." required>
+                </div>
+                <div id="amountWarning" class="center padded hide">
+                    <p class="warningMessage">You must include the amount of the transaction.</p>
+                </div>
+
+
+                <div class="center padded">
+                    <button>Submit Transaction</button>
+                </div>
+            </form>
+            <button id="logout" class="center padded logoutbtn">Log Out</button>
+        </div>
+    </div>
+
+    <script src="bankworks.js"></script>
+</body>

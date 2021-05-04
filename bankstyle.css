@@ -1,0 +1,93 @@
+* {
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+.invalid {
+    border-color: red;
+    border-width: 10px;
+}
+
+.warningMessage {
+    color: red;
+    align-self: center;
+    font-size: 25px;
+}
+
+.loginSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.newUser, .newTransaction {
+    display: flex;
+    flex-direction: column;
+    border-color: 474747;
+    border-width: 3px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.padded {
+    padding: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    display: flex;
+    align-self: center;
+    color: white;
+    font-size: 35px;
+}
+
+h4 {
+    display: flex;
+    align-self: center;
+    color: 474747;
+    font-size: 22px;
+}
+
+body {
+    background-color: #474747;
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.userField {
+    background-color: steelblue;
+    width: 60%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+.logoutbtn {
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-self: center;
+}
+
+#description {
+    resize: none;
+}
+
+.inputWidth {
+    width: 40%;
+}
